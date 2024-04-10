@@ -9,7 +9,6 @@ import { SenhasService } from '../services/senhas.service';
 export class Tab3Page {
 
   constructor(public senhasService : SenhasService) {
-    const servicoDeSenha = SenhasService
   }
 
 }

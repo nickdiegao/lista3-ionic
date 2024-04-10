@@ -8,10 +8,7 @@ import { SenhasService } from '../services/senhas.service';
 })
 export class Tab1Page {
 
-  inputNovaSenha: String = '';
-
   constructor(public senhasService : SenhasService) {
-    const servicoDeSenha = SenhasService
   }
 
 }
