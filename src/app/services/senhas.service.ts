@@ -37,7 +37,7 @@ export class SenhasService {
       '-' + tipoSenha + (this.senhasArray['SG'].length + 1).toString().padStart(2, '0');
       this.senhasArray['SG'].push(this.inputNovaSenha);
     } else if (tipoSenha == 'SP'){
-      this.somaGeral();
+      this.somaPrior();
       this.inputNovaSenha = 
       new Date().getFullYear().toString().substring(2, 4) +
       new Date().getMonth().toString().padStart(2, '0') +
@@ -45,7 +45,7 @@ export class SenhasService {
       '-' + tipoSenha + (this.senhasArray['SP'].length + 1).toString().padStart(2, '0');
       this.senhasArray['SP'].push(this.inputNovaSenha);
     } else if (tipoSenha == 'SE') {
-      this.somaGeral();
+      this.somaExame();
       this.inputNovaSenha = 
       new Date().getFullYear().toString().substring(2, 4) +
       new Date().getMonth().toString().padStart(2, '0') +
